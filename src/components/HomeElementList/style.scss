@@ -1,0 +1,63 @@
+@import '../../styles/colors.scss';
+
+#home-list-container {
+	#home-list-title {
+		font-size: 40px;
+		font-weight: 600;
+		margin-bottom: 5px;
+	}
+
+	.home-list {
+		display: grid;
+		gap: 2rem;
+		grid-template-columns: 1fr;
+
+		@media only screen and (min-width: 600px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media only screen and (min-width: 900px) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+
+		.list-item {
+			align-self: center;
+			justify-self: center;
+
+			.item-thumbnail {
+				width: 100%;
+			}
+
+			.item-control {
+				background: $background-light;
+				display: flex;
+				align-items: center;
+				margin-top: -10px;
+				padding: 20px 0;
+				transition: all 200ms ease;
+
+				.item-logo {
+					flex: 1;
+				}
+
+				.item-logo-text {
+					font-size: 20px;
+					font-weight: 600;
+					margin: 0;
+					margin-left: 20px;
+				}
+
+				.item-info {
+					font-weight: 700;
+					margin: 0;
+					margin-right: 20px;
+				}
+			}
+
+			&:hover {
+				.item-control {
+					background: $primary;
+				}
+			}
+		}
+	}
+}

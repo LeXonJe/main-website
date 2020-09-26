@@ -1,0 +1,59 @@
+@import '../../styles/colors.scss';
+
+.recommended-container {
+	.logo {
+		margin: 0;
+		padding: 0;
+	}
+
+	.logo-text {
+		font-size: 5rem;
+		font-weight: 700;
+	}
+
+	.info {
+		font-size: 20px;
+		font-weight: 600;
+	}
+
+	.tag-list {
+		display: flex;
+		flex-direction: row;
+
+		.tag-list-item {
+			padding: 0 1rem 0 0;
+			font-style: italic;
+			font-weight: 400;
+		}
+	}
+
+	.description {
+		margin-top: 5px;
+		width: 50%;
+		font-weight: 500;
+	}
+
+	.controls {
+		margin-top: 30px;
+
+		a {
+			background: $button-dark-alpha;
+			// border-radius: 5px;
+			padding: 8px 10px;
+			font-weight: bold;
+			&:hover {
+				background: $primary;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		.logo-text {
+			font-size: 4rem;
+		}
+
+		.description {
+			width: 100%;
+		}
+	}
+}

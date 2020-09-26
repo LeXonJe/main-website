@@ -5,6 +5,10 @@ $primary: #f40f3a;
 $text-primary: #fff;
 $text-secondary: #868686;
 
+// button
+$button-dark: #151515;
+$button-dark-alpha: rgba($button-dark, 0.7);
+
 // background
 $background-light: #262626;
 $background-lighter: lighten($background-light, 5);
